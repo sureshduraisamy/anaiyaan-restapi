@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 1,
+    "Name": "Naveen Kumar",
+    "Mobile": 9087876560,
+    "Age": 30,
+    "Email": "naveen@gmail.com",
+    "Location": "Dharapuram"
+  },
+  {
+    "Id": 2,
+    "Name": "Kavin",
+    "Mobile": 9382984930,
+    "Age": 22,
+    "Email": "Kavin@gmail.com",
+    "Location": "Palani"
+  }
+]
