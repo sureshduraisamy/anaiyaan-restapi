@@ -12,7 +12,6 @@ namespace REST_Services.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class JsonCRUDController : ControllerBase
     {
         private readonly PatientManager manager = new PatientManager();

@@ -1,17 +1,9 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace REST_Services
 {
@@ -32,7 +24,7 @@ namespace REST_Services
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "BasicAuth", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Anaiyaan API Services", Version = "v1" });
                 c.AddSecurityDefinition("basic", new OpenApiSecurityScheme
                 {
                     Name = "Authorization",
@@ -76,6 +68,7 @@ namespace REST_Services
 
             app.UseRouting();
             app.UseAuthentication();
+
             app.UseAuthorization();
             
             app.UseEndpoints(endpoints =>
